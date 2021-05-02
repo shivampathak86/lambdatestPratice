@@ -1,20 +1,16 @@
 
-import java.awt.Image;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.MalformedURLException;
+
 import java.net.URL;
-import java.util.Locale;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -160,10 +156,7 @@ public class EndToEndLambdaTest {
 
 		try {
 
-	
 			URL imageURL = new URL(imageSrc);
-
-			
 
 			InputStream is = imageURL.openStream();
 			FileOutputStream os = new FileOutputStream(filePath);
